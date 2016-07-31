@@ -1,0 +1,202 @@
+/**
+  * Jeremiah Bill
+  * CSS style sheet for SmartMirror.html
+  */
+
+iframe {
+         width: 100%;
+         border: 0;
+         min-height: 80%;
+         height: 600px;
+         display: flex;
+         }
+         body{background-color: black;}
+         .facebook{
+          position: fixed;
+          top:50px;
+          left: 50px;
+          color:white;
+         }
+         .time{
+          font-size:70px;
+          color:white;
+         }
+        .date{
+          color:white;
+          font-size: 25px;
+          position:fixed;
+          left:10px;
+        }
+        
+         .buttonsToHide{
+          display: none;
+
+         }
+
+
+         body, html{
+          overflow: hidden;
+          height: 100%;
+         }
+
+        #wrap {min-height: 100%;}
+
+        #main {overflow:hidden;
+          padding-bottom: 180px;}
+
+        #footer {position: relative;
+          margin-top: -620px; 
+          height: 180px;
+          clear:both;} 
+
+        body:before {
+        content:"";
+        height:100%;
+        float:left;
+        width:0;
+        margin-top:-32767px;
+        }
+        .soundcloudButtons{
+          text-align: center;
+          position: fixed;
+          top: 970px;
+          left:10px;
+        }
+        img{
+          width: 200px;
+          height: 200px;
+          margin-top: -50px;
+        }
+        .list , .wIMG{
+          float: right;
+        }
+        .clearfix{
+          clear:both;
+        }
+        #inbox{
+          color:white;
+          position: fixed;
+          top:250px ;
+          left:90px;
+          width:800px ;   
+                  
+        }
+        .weather{
+          position:fixed;
+          top:20px;
+          right:5px;
+          color:white ;
+          font-size: 25px;
+        }
+        #icon{
+          width: 250px;
+          height: 250px;
+        }
+        #animate {
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top:200px;
+          left:45px;
+          background-color: black;
+          border: 3px solid white;
+          }
+        #animate1 {
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top:205px;
+          left:50px;
+          background-color: black;
+          border: 3px solid white;
+        }
+        #animate2 {
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          top:210px;
+          left:55px;
+          background-color: black;
+          border: 3px solid white;
+        }
+        #prompt{
+          position: absolute;
+          top:200px;
+          left:100px;
+          color: white;
+          font-size: 25px;
+        }
+      #greeting{
+        color: white;
+        font-size: 125px;
+        position: absolute;
+        top:500px;
+        left:165px;
+        display: initial;
+      }
+      #googleMaps{
+        position: absolute;
+        top:300px;
+        left:000px;
+      }
+      #map {
+        width: 500px;
+        height: 600px;
+      }
+
+      #directions{
+         text-align: left;
+         background-color: white;
+         color:black;
+        position: absolute;
+        left: 500px;
+        top:0px; 
+        width:500px;
+      }  
+      .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
