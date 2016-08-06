@@ -74,7 +74,7 @@ public class Mouse extends Listener {
 			}
 		}
 
-		//handle gesures
+		//handle gestures
 		if(!frame.gestures().isEmpty()){
 			for(Gesture g : frame.gestures()){
 				if(g.type() == Gesture.Type.TYPE_KEY_TAP){
