@@ -16,41 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 // sub-directory, and the server will serve them from there.
 app.use(express.static('static_files'));
 
-//Node mailer function
-var emailer = require('nodemailer');
-var transporter = emailer.createTransport({
-  service: 'Gmail',
-  auth:{
-    user: 'urmarket1234@gmail.com',
-    pass: '*O-line96'
-  }
-});
-
-
-//Get request for the send email function
-app.get('/send', function(req , res){
-
-  var mail = {
-  to: req.query.to,
-  subject: 'Directions from SmartMirror',
-  html: req.query.html,
-  }
-  transporter.sendMail(mail,function(error, response){
-    if(error){
-      console.log(error);
-      res.send("error");
-
-    }
-    else{
-      console.log("Message was sent!");
-      res.end("sent");
-    }
-    
-
-  });
-  
-
-});
 // start the server on http://localhost:8000/
 var server = app.listen(8000, function () {
   var port = server.address().port;
